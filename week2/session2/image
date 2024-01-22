@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==device-width, initial-scale=1.0">
+    <title>socks</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav id="breadcrumbs">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Basket</a></li>
+            <li><a href="#">My account</a></li>
+         </ul>
+    </nav>
+
+    <h1 class="product-title">Union Jack Socks - Navy</h1>
+
+    <section class="product-image">
+        <img src="https://m.media-amazon.com/images/I/71cMtVtYtrL._AC_SX679_.jpg" width="400px" alt="Union Jack Socks">
+    </section>
+    
+    <section class="product-options">
+        <div class="size-options">
+        <button>6 - 10</button>
+        <button>10.5 - 13</button>
+        </div>
+
+        <div class="quantity">
+            <label for=" quantity">Quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <p class="price">Price : <strong>$9.99</strong></p>
+        <button class="add-to-bag">Add to bag</button>
+    </section>
+
+    <section>
+        <h2 class="product-description">Product Description</h2>
+        <p class="details"> Super Stretchy Mid Calf socks that stay up and stay put. 
+            <br>The soft, smooth feel of the fabric and cute design that makes them perfect to complete a cute outfit!
+            <br>Flag Socks- Premium 75% combed cotton, 23% Polyester, 2% Elasthane.   
+            <br>Fits size : US 8-12, UK 7-11, EU 41-46.
+            <br>Mid Calf Socks - Perfect for both Men and Women
+            <br>Occasion: Business, Casual, Formal, Work wear
+            <br>CARE : Machine Wash - Warm (greater than 30°)</p>
+        <ul class="Product-Feature">
+            <li>Product Feature 1</li>
+            <li>Product Feature 2</li>
+            <li>Product Feature 3</li>
+            <li>Product Feature 4</li>
+        </ul>
+    </section>
+
+    <table class="delivery-options">
+        <thead >
+            <tr class="delivery-options th">
+                <th>Delivery Option</th>
+                <th>Price</th>
+                <th>Estimated Delivery Time</th>
+            </tr>
+        </thead>
+        <tbody class="delivery-options td">
+            <tr>
+                <td>Standard Delivery </td>
+                <td>$4.99</td>
+                <td>3-5 Working Day </td>
+            </tr>
+            <tr>
+                <td>Next Day Delivery </td>
+                <td>$7.99</td>
+                <td>Next Working Day </td>
+            </tr>
+            <tr>
+                <td>Click & Collect </td>
+                <td>Free</td>
+                <td>Same Day </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+    
+
+</html>
