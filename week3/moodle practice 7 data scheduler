@@ -1,0 +1,22 @@
+from datetime import datetime
+
+def date_passed(todays_date, scheduled_date):
+    # Define the date format
+    date_format = "%d %B"
+
+    # Parse the input dates using the specified format
+    current_date = datetime.strptime(todays_date, date_format)
+    scheduled = datetime.strptime(scheduled_date, date_format)
+
+    # Compare the scheduled date with the current date
+    if scheduled < current_date:
+        print("The scheduled date has passed.")
+    elif scheduled > current_date:
+        print("The scheduled date is yet to pass.")
+    else:
+        print("The scheduled date is today.")
+
+# Example usage:
+todays_date = input("Please enter today date(in the format 'day Month'):")
+scheduled_date = input("The schedule date(in the format 'day Month'):")
+date_passed(todays_date, scheduled_date)
