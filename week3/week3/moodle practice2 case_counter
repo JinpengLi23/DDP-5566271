@@ -1,8 +1,4 @@
 def case_counter(text):
-    # Your code goes here
-    # Remember to count uppercase and lowercase letters and ignore non-alphabetic characters
-    pass  # Delete this after implementing some code inside this function.
-
     Uppercase_letters = 0
     lowercase_letters = 0
     for char in text:
@@ -11,14 +7,7 @@ def case_counter(text):
                 Uppercase_letters += 1
             elif char.islower():
                 lowercase_letters += 1
-
     print(f"Uppercase letters: {Uppercase_letters} , Lowercase letters: {lowercase_letters}")
-          
-    return Uppercase_letters and lowercase_letters
-    
-    
-# Test cases
-case_counter("Hello World!")  # Expected: Uppercase letters: 2, Lowercase letters: 8
-case_counter("PYTHON")  # Expected: Uppercase letters: 6, Lowercase letters: 0
-case_counter("python")  # Expected: Uppercase letters: 0, Lowercase letters: 6
-case_counter("1234!@#$")  # Expected: Uppercase letters: 0, Lowercase letters: 0
+
+user_input = input("Enter a phrase: ")
+case_counter(user_input)
