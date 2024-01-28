@@ -1,7 +1,7 @@
 def speeding_ticket(speed, is_birthday):
     # Adjust speed limit if it's the driver's birthday
    
-    if is_birthday:
+    if is_birthday==True:
         adjustment = 5
     else :
          adjustment = 0
