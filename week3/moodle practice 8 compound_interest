@@ -1,0 +1,17 @@
+def compound_interest_calculator(P, r, n, t):
+    if P <= 0 or r <= 0 or n <= 0 or t <= 0:
+        return "Invalid input. Please ensure all inputs are positive numbers."
+    A = P * (1 + r / n) ** (n * t)
+    return A
+
+principal = float(input("Enter the principal amount: "))
+annual_rate = float(input("Enter the annual interest rate (e.g., 0.05 for 5%): "))
+compounding_frequency = int(input("Enter the number of times interest is compounded per year: "))
+years = int(input("Enter the number of years for investment: "))
+
+result = compound_interest_calculator(principal, annual_rate, compounding_frequency, years)
+
+if isinstance(result, str):
+    print(result)  # Handle invalid input
+else:
+    print(f"The accumulated amount after {years} years is ${result:.2f}")
