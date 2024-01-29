@@ -1,0 +1,19 @@
+def fibonacci_sequence(max_value):
+    if max_value < 0:
+        return []  
+    elif max_value == 0:
+        return [0] 
+
+    sequence = [0, 1]
+    while sequence[-1] + sequence[-2] <= max_value:
+        next_number = sequence[-1] + sequence[-2]
+        sequence.append(next_number)
+    return sequence
+
+max_value = int(input("Enter the maximum value for the Fibonacci sequence: "))
+result = fibonacci_sequence(max_value)
+
+if not result:
+    print("No Fibonacci sequence to display for the given input.")
+else:
+    print("Fibonacci sequence:", result)
